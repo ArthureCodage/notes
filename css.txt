@@ -1,0 +1,87 @@
+# CSS
+
+## Description:
+CSS (Cascading Style Sheets) est un langage de feuille de style utilisé pour décrire la présentation d'un document écrit en HTML. CSS permet de contrôler l'apparence, la mise en page et le comportement visuel des éléments HTML sur différents appareils et tailles d'écran.
+
+## Sélecteurs et propriétés importants:
+`selector { property: value; }` : structure de base d'une règle CSS
+`element` : sélectionne tous les éléments d'un type spécifique (ex: `p`, `div`)
+`.class` : sélectionne les éléments avec une classe spécifique (ex: `.container`)
+`#id` : sélectionne un élément avec un ID spécifique (ex: `#header`)
+`element.class` : sélectionne uniquement les éléments d'un type avec une classe spécifique
+`parent > child` : sélectionne les enfants directs
+`element1, element2` : sélectionne plusieurs éléments
+`element:hover` : s'applique quand l'utilisateur survole l'élément
+`display` : contrôle comment un élément s'affiche (block, inline, flex, grid, none)
+`position` : définit le type de positionnement (relative, absolute, fixed, sticky)
+`margin` : espace autour d'un élément, à l'extérieur des bordures
+`padding` : espace entre le contenu et les bordures
+`width`, `height` : définit la largeur et la hauteur d'un élément
+`color` : couleur du texte
+`background` : couleur ou image d'arrière-plan
+`font-family` : type de police de caractères
+`font-size` : taille de la police
+`border` : bordure autour d'un élément
+`border-radius` : arrondit les coins d'un élément
+`box-shadow` : ajoute une ombre à un élément
+`transition` : anime les changements de propriétés
+`@media` : définit des règles pour différentes tailles d'écran (responsive design)
+
+## Exemple de code CSS:
+```css
+/* Style de base pour le corps de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Style d'en-tête */
+header {
+    background-color: #35424a;
+    color: white;
+    padding: 20px 0;
+    border-bottom: 3px solid #e8491d;
+}
+
+/* Style de navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #e8491d;
+    transition: 0.3s;
+}
+
+/* Media query pour écrans mobiles */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav li {
+        margin: 10px 0;
+    }
+}
+```

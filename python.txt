@@ -1,0 +1,107 @@
+# Python
+
+## Description:
+Python est un langage de programmation interprété, de haut niveau et polyvalent. Il met l'accent sur la lisibilité du code avec sa syntaxe claire et expressive. Python est utilisé dans le développement web, l'analyse de données, l'intelligence artificielle, l'automatisation, et bien d'autres domaines.
+
+## Concepts et fonctionnalités importants:
+`variable = valeur` : affectation de variable (pas besoin de déclaration spécifique)
+`#` : commentaire sur une ligne
+`"""commentaire"""` : commentaire sur plusieurs lignes
+`print()` : affiche du texte dans la console
+`input()` : récupère une entrée utilisateur
+`if`, `elif`, `else` : structures conditionnelles
+`for`, `while` : boucles
+`def` : définit une fonction
+`return` : renvoie une valeur depuis une fonction
+`class` : définit une classe
+`import` : importe un module
+`try`, `except` : gestion des exceptions
+`list` : collection ordonnée et modifiable [1, 2, 3]
+`tuple` : collection ordonnée et immuable (1, 2, 3)
+`dict` : collection non ordonnée de paires clé-valeur {'a': 1, 'b': 2}
+`set` : collection non ordonnée d'éléments uniques {1, 2, 3}
+`len()` : retourne la longueur d'un objet
+`range()` : génère une séquence de nombres
+`str()`, `int()`, `float()` : conversion de types
+`list.append()` : ajoute un élément à la fin d'une liste
+`list.sort()` : trie une liste
+`dict.keys()`, `dict.values()` : retourne les clés ou valeurs d'un dictionnaire
+`file.open()` : ouvre un fichier
+`with` : gestion de contexte (pour les fichiers et autres ressources)
+`lambda` : fonction anonyme en une ligne
+`map()`, `filter()` : fonctions pour traiter des collections
+`pip` : gestionnaire de paquets pour installer des bibliothèques
+
+## Exemple de code Python:
+```python
+# Importation de bibliothèques
+import math
+import random
+from datetime import datetime
+
+# Variables et types de données
+name = "Alice"      # Chaîne de caractères
+age = 25            # Entier
+height = 1.75       # Nombre à virgule flottante
+is_student = True   # Booléen
+colors = ["red", "green", "blue"]  # Liste
+point = (10, 20)    # Tuple
+person = {"name": "Bob", "age": 30}  # Dictionnaire
+unique_numbers = {1, 2, 3, 4, 5}  # Ensemble (set)
+
+# Fonctions
+def greet(name, greeting="Bonjour"):
+    """Cette fonction salue une personne."""
+    return f"{greeting}, {name}!"
+
+# Appel de fonction
+message = greet("Alice")
+print(message)  # Affiche: Bonjour, Alice!
+
+# Classe
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def birthday(self):
+        self.age += 1
+        return f"{self.name} a maintenant {self.age} ans."
+
+# Création d'un objet
+alice = Person("Alice", 25)
+print(alice.birthday())  # Affiche: Alice a maintenant 26 ans.
+
+# Structures conditionnelles
+x = 10
+if x > 20:
+    print("x est supérieur à 20")
+elif x > 5:
+    print("x est entre 6 et 20")
+else:
+    print("x est inférieur ou égal à 5")
+
+# Boucle for
+for color in colors:
+    print(color)
+
+# Boucle while
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+
+# Gestion des exceptions
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Division par zéro impossible!")
+
+# Manipulation de fichiers
+with open("example.txt", "w") as file:
+    file.write("Bonjour, monde!")
+
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
+```

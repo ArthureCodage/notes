@@ -1,0 +1,54 @@
+# HTML
+
+## Description:
+HTML (HyperText Markup Language) est le langage standard pour créer des pages web. Il utilise des balises pour structurer le contenu et définir sa signification. Ces balises sont interprétées par les navigateurs pour afficher correctement le contenu aux utilisateurs.
+
+## Balises et éléments importants:
+`<html>` : élément racine qui englobe tout le document HTML
+`<body>` : contient tout le contenu visible de la page
+`<head>` : contient les métadonnées et liens vers ressources externes (non visible)
+`<link>` : permet de connecter des ressources externes comme les fichiers CSS
+`<div>` : conteneur générique pour regrouper d'autres éléments
+`<p>` : définit un paragraphe de texte
+`<h1>` à `<h6>` : définit les titres de différents niveaux
+`<a>` : crée des liens hypertextes
+`<img>` : insère une image dans la page
+`<ul>`, `<ol>`, `<li>` : créent des listes non-ordonnées, ordonnées et leurs éléments
+`<table>`, `<tr>`, `<td>` : créent des tableaux et leurs cellules
+`<form>` : crée un formulaire pour collecter des données utilisateur
+`<input>` : crée différents types de champs de saisie
+`<button>` : crée un bouton cliquable
+`<span>` : conteneur en ligne pour du texte ou autres éléments
+`<header>` : définit l'en-tête d'une section ou page
+`<footer>` : définit le pied de page d'une section ou page
+`<nav>` : définit une section de navigation
+`<section>` : définit une section générique de contenu
+`<article>` : définit un contenu autonome
+`<aside>` : définit un contenu connexe mais distinct
+`<br>` : insère un saut de ligne
+`<hr>` : insère une ligne horizontale
+
+## Structure de base d'une page HTML:
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titre de la page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Titre principal</h1>
+        <nav>Menu de navigation</nav>
+    </header>
+    <main>
+        <p>Contenu principal ici</p>
+    </main>
+    <footer>
+        <p>Pied de page</p>
+    </footer>
+</body>
+</html>
+```

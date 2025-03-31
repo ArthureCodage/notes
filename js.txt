@@ -1,0 +1,87 @@
+# JavaScript
+
+## Description:
+JavaScript est un langage de programmation interprété qui permet d'implémenter des fonctionnalités complexes sur les pages web. Il permet de créer du contenu dynamique, de contrôler du multimédia, d'animer des images, et bien plus. C'est le langage de script côté client standard pour le web.
+
+## Concepts et fonctionnalités importants:
+`var`, `let`, `const` : déclarations de variables (const pour valeurs constantes)
+`function` : définit une fonction
+`() => {}` : fonction fléchée (arrow function)
+`document.getElementById()` : sélectionne un élément par son ID
+`document.querySelector()` : sélectionne un élément avec un sélecteur CSS
+`element.addEventListener()` : attache un gestionnaire d'événements à un élément
+`console.log()` : affiche des données dans la console du navigateur
+`if`, `else if`, `else` : structures conditionnelles
+`for`, `while` : boucles
+`array.forEach()` : exécute une fonction pour chaque élément d'un tableau
+`array.map()` : crée un nouveau tableau en transformant chaque élément
+`array.filter()` : crée un tableau contenant les éléments qui satisfont une condition
+`array.reduce()` : réduit un tableau à une seule valeur
+`object.keys()` : retourne un tableau des clés d'un objet
+`JSON.parse()` : convertit une chaîne JSON en objet
+`JSON.stringify()` : convertit un objet en chaîne JSON
+`fetch()` : effectue des requêtes HTTP pour récupérer des ressources
+`async`, `await` : pour la programmation asynchrone
+`Promise` : représente une opération qui n'est pas encore terminée
+`localStorage` : stocke des données dans le navigateur
+`setTimeout()` : exécute une fonction après un délai
+`setInterval()` : exécute une fonction à intervalles réguliers
+`try`, `catch` : gestion des erreurs
+
+## Exemple de code JavaScript:
+```javascript
+// Variables et types de données
+let name = "John";  // Chaîne de caractères
+const age = 30;     // Nombre
+let isActive = true; // Booléen
+let user = {        // Objet
+    firstName: "John",
+    lastName: "Doe",
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+};
+let colors = ["red", "green", "blue"];  // Tableau
+
+// Fonction 
+function greet(name) {
+    return `Bonjour, ${name}!`;
+}
+
+// Fonction fléchée
+const multiply = (a, b) => a * b;
+
+// Manipulation du DOM
+document.addEventListener('DOMContentLoaded', () => {
+    // Sélectionner des éléments
+    const button = document.querySelector('#myButton');
+    const output = document.getElementById('output');
+    
+    // Ajouter un événement
+    button.addEventListener('click', () => {
+        output.textContent = 'Bouton cliqué!';
+        output.style.color = 'red';
+    });
+});
+
+// Requête AJAX avec Fetch
+fetch('https://api.example.com/data')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.error('Erreur:', error);
+    });
+
+// Fonction asynchrone
+async function getData() {
+    try {
+        const response = await fetch('https://api.example.com/data');
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Erreur:', error);
+    }
+}
+```
